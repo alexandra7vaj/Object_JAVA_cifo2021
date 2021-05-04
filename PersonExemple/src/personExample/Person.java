@@ -52,6 +52,27 @@ public class Person {
 	    	this.money = money - moneyToPay;
 	    }
 	
+		public double yearNetSalary() {
+			
+			double yearNetSalary = 0.0;
+			
+			// first i must check weather THIS object have got money
+			// this.basicSalary > 1
+			if(this.basicSalary > 1) {
+				yearNetSalary = this.basicSalary * 14;
+				
+				if(this.age > 30) {
+			} else {
+				yearNetSalary = yearNetSalary * 0.94;
+			}
+			} else {
+				System.out.println(name + "has not got any salary, so YearNetSalary not available!");
+			}
+			
+			return yearNetSalary;
+		}
+				
+	
 		
 		//Getters and Setters and toString
 	
