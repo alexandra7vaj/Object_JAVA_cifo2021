@@ -6,18 +6,27 @@ public class Person {
     //fields from Person Class
 	public String name;
 	public int age;
-	public int weigth;
-	public int heigth;
 	public double basicSalary;
 	public double money;
+	
+	public int heigth;
+	public int weigth;
+	public double gender;
+		
 	
 	
 	
 	
 	//Constructor from Person Class_Siempres es publico y no tiene return
+	public Person(String name, int heigth, int weigth, double gender) {
+ 		
+ 			this.name = name;
+ 			this.heigth = heigth;
+ 			this.weigth = weigth;
+ 			this.gender = gender;
+ 		}
+ 		
 	
- 	public Person() {
-	}
 	
     public Person(String name, int age, int weigth, int heigth, double basicSalary) {
 		
@@ -79,6 +88,19 @@ public class Person {
  	public String getName() {
 		return name;
 	}
+	public Person(String name, int age, double basicSalary, double money, int heigth, int weigth, double gender) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.basicSalary = basicSalary;
+		this.money = money;
+		this.heigth = heigth;
+		this.weigth = weigth;
+		this.gender = gender;
+	}
+
+
+
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -108,11 +130,12 @@ public class Person {
 	}
 
 
-	//toString
 	@Override
 	public String toString() {
-		return "Person Fields: (name=" + name + ", age=" + age + ", weigth=" + weigth + ", heigth=" + heigth + ", basicSalary="
-				+ basicSalary + ")";
+		return "Person [name=" + name + ", age=" + age + ", weigth=" + weigth + ", heigth=" + heigth + ", basicSalary="
+				+ basicSalary + ", money=" + money + ", yearNetSalary()=" + yearNetSalary() + ", getName()=" + getName()
+				+ ", getAge()=" + getAge() + ", getWeigth()=" + getWeigth() + ", getHeigth()=" + getHeigth()
+				+ ", getBasicSalary()=" + getBasicSalary() + "]";
 	}
 	
 	

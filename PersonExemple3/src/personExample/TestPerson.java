@@ -9,7 +9,8 @@ public class TestPerson {
 	//test them etc...
 	//that is, to start the program and define
 	//the tempo, the sequencing of executing
-    public static void executePerson() {
+    
+	public static void executePerson() {
 		
 		createAndTestObjectsPerson();
 		//setAndGetTestObjectsPerson();
@@ -17,7 +18,20 @@ public class TestPerson {
 		testListObjectsPerson();
 	
 	}
+	
+	// creation 3 objects pants
+	public static void createAndTestObjectsPants() {
+		
+	  Pants p1 = new Pants("Levis", "red", 100);
+	  Pants p2 = new Pants("Zara", "green", 80);
+	  Pants p3 = new Pants("chino", black, 10);
+	}
+	  
+	  
+	// creation method calculate pants size
+	public static void createCalculatePantsSize() {}
     
+	
 	//----- no lo se metodos -----
 	public static void createAndTestObjectsPerson() {
 		
@@ -104,4 +118,6 @@ public class TestPerson {
 	     System.out.println("\n");
 	}
 }
+
+
 
