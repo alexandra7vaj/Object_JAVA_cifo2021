@@ -81,7 +81,7 @@ public class TestPerson {
 		people.add(jack);
 		people.add(marc);
 		
-		//llama a metodo printPiople con parametro people y imprima 
+		//llama a metodo printPiople con parametro people y imprima objectes que estan en la lista de Array 
 		printPeople(people);
 		
 		//System.out.println( people.toString() );
