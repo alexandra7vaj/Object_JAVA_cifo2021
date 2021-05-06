@@ -1,4 +1,4 @@
-package personExample;
+           package personExample;
 
 public class Person {
 

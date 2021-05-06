@@ -19,15 +19,7 @@ public class TestPerson {
 	
 	}
 	
-	// creation 3 objects pants
-	public static void createAndTestObjectsPants() {
-		
-	  Pants p1 = new Pants("Levis", "red", 100);
-	  Pants p2 = new Pants("Zara", "green", 80);
-	  Pants p3 = new Pants("chino", black, 10);
-	}
-	  
-	  
+	
 	// creation method calculate pants size
 	public static void createCalculatePantsSize() {}
     
@@ -36,7 +28,7 @@ public class TestPerson {
 	public static void createAndTestObjectsPerson() {
 		
 		//i am going to create an object WITHOUT parameters, that is a empty object
-		Person sergi = new Person();
+		Person sergi = new Person("");
 		
 		Person isa = new Person("Isabel", 18);
 		
@@ -88,7 +80,7 @@ public class TestPerson {
 		//remember: i need three constructors!!
 		Person alexa = new Person("Alexa", 25, 60, 180, 2500);
 		Person jack = new Person("Jackson Pollock", 25);
-		Person marc = new Person();
+		Person marc = new Person("");
 		
 		//we add the previous created objects to People ArrayList
 		people.add(alexa);

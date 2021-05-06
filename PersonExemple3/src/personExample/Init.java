@@ -6,9 +6,9 @@ public class Init {
 		
 		TestPerson.executePerson();
 		
+		TestPants.executePants();
 		
-		
-		System.out.println("Bye, bye my friend...");
+		System.out.println("THER GOOD XD");
 
 	}
 
