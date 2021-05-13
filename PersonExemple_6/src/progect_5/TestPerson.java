@@ -1,6 +1,7 @@
 package progect_5;
 
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class TestPerson {
 
@@ -28,5 +29,57 @@ public class TestPerson {
 				
 				System.out.println("Your size is: " + user.sizePants);
 	}
+	
+	public static void createAndTestObjectsPant() {
 
+		// create an object without parameters class Pant,
+		Pant p1 = new Pant("Levi's ","red ", "L", 150);
+		Pant p2 = new Pant("Zarra ","black ", "M", 35);
+		Pant p3 = new Pant("Chino", "blue ", "S", 15);
+		
+		// p1 object, calls toString Method
+		p1.toString();
+		System.out.println(p1.toString());
+		
+		p2.toString();
+		System.out.println(p2.toString());
+		
+		p3.toString();
+		System.out.println(p3.toString());
+	}
+
+	public static void testListPantPerson() {
+		ArrayList<Pant> pants = new ArrayList<Pant>();
+		
+		// create three Pant Objects
+		Pant p1 = new Pant("Levi's ","red ", "L", 150);
+		Pant p2 = new Pant("Zarra ","black ", "M", 35);
+		Pant p3 = new Pant("Chino", "blue ", "S", 15);
+		
+		// we add the previous created objects to pants ArrayList
+		pants.add(p1);
+		pants.add(p2);
+		pants.add(p3);
+		
+		System.out.println(pants.toString());
+		//printPants(pants);
+		
+	}
+	public static void printPants(ArrayList<Pant> arrayToPrint) {
+
+		System.out.println("Pants:\n");
+
+		for (Pant pantToPrint : arrayToPrint) {
+			System.out.println(pantToPrint);
+		}
+		
+		System.out.println("\n");
+   }
 }
+
+
+
+	
+
+	
+	
