@@ -8,7 +8,7 @@ public class Pant {
 	public String color;
 	public String sizePants;
 	public int price;
-	ArrayList<Pant> pants;
+	
 
 	// Constructor from Person Class
 	public Pant(String brand, String color, String sizePants, int price) {
@@ -17,8 +17,7 @@ public class Pant {
 		this.color = color;
 		this.sizePants = sizePants;
 		this.price = price;
-		this.pants = new ArrayList<Pant>();
-	}
+	} //ArrayList<Pant>clothes = new arrayList<Pant>
 
 	// Getters and Setters 
 	public String getBrand() {
@@ -70,7 +69,7 @@ public class Pant {
 	// toString
 	@Override
 	public String toString() {
-		return "Pant [brand=" + brand + ", color=" + color + ", sizePants=" + sizePants + ", price=" + price + "]";
+		return "(brand=" + brand + ", color=" + color + ", sizePants=" + sizePants + ", price=" + price + ")";
 	}
 	
 	

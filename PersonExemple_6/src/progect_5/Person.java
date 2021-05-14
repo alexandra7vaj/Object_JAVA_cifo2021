@@ -1,5 +1,7 @@
 package progect_5;
 
+import java.util.ArrayList;
+
 public class Person {
 
 	//fields from Person Class
@@ -9,6 +11,7 @@ public class Person {
 	public int heigth;
 	public int weigth;
 	public String sizePants;
+	public ArrayList<Pant> listaPant;
 
 	
 	//Constructor from Person Class
@@ -29,6 +32,9 @@ public class Person {
 		this.gender = gender;
 		this.heigth = heigth;
 		this.weigth = weigth;
+		this.listaPant = new ArrayList<Pant>();
+		
+		
 		//public String sizePants - I want to calculate why it is not active
 	}
 	
